@@ -1,28 +1,27 @@
 import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
+import HttpApi from 'i18next-http-backend';
 
 const detectionOptions = {
   order: ['localStorage', 'navigator'],
   caches: ['localStorage'],
 };
 
+const languages = [{ key: 'en-US', label: 'EN' }];
+
 i18next
   .use(LanguageDetector)
   .use(initReactI18next)
+  .use(HttpApi)
   .init({
-    lng: 'en', // if you're using a language detector, do not define the lng option
+    ns: 'common',
+    load: languages,
     detection: detectionOptions,
+    fallbackLng: 'en',
     debug: true,
-    react: {
-      useSuspense: true,
-    },
-    resources: {
-      en: {
-        translation: {
-          key: 'hello world',
-        },
-      },
+    backend: {
+      loadPath: '/locales/{{lng}}/{{ns}}.json',
     },
   });
 
