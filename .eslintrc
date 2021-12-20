@@ -1,0 +1,73 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "project": "./tsconfig.json"
+    },
+    "settings": {
+        "react": {
+            "pragma": "React",
+            "version": "detect"
+        }
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier",
+        "plugin:jsx-a11y/recommended",
+        "plugin:prettier/recommended",
+        "airbnb-typescript",
+        "plugin:react/jsx-runtime"
+    ],
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            }
+        ],
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "warn"
+        ],
+        "@typescript-eslint/indent": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "react/jsx-one-expression-per-line": "off",
+        "react/prop-types": "off",
+        "linebreak-style": 0,
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "object-curly-newline": "off",
+        "arrow-body-style": "off",
+        "react/jsx-props-no-spreading": "off",
+        "implicit-arrow-linebreak": "off",
+        "func-names": "off",
+        "operator-linebreak": "off",
+        "function-paren-newline": "off",
+        "react/require-default-props": "off",
+        "react/jsx-curly-newline": "off",
+        "react/jsx-wrap-multilines": "off"
+    },
+    "plugins": [
+        "import",
+        "react",
+        "prettier",
+        "jsx-a11y"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    }
+}
