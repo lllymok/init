@@ -1,4 +1,6 @@
 {
   "button": "Button",
-  "welcome": "Welcome to React En"
+  "welcome": "Welcome to React En",
+  "en": "En",
+  "fr": "Fr"
 }

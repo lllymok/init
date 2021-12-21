@@ -19,7 +19,7 @@ i18next
     load: languages,
     detection: detectionOptions,
     fallbackLng: 'en',
-    debug: true,
+    debug: false,
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json',
     },
