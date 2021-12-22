@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.heading-4xl {
+		@apply text-4xl font-extrabold text-gray-800;
+	}
+
+	.heading-3xl {
+		@apply text-3xl font-extrabold text-gray-900;
+	}
+
+	.heading-2xl {
+		@apply text-2xl font-extrabold text-gray-900;
+	}
+
+	.heading-xl {
+		@apply text-xl font-bold text-gray-800;
+	}
+
+	.heading-lg {
+		@apply text-lg leading-6 font-medium text-gray-900;
+	}
+
+	.text-secondary {
+		@apply text-sm text-gray-500
+	}
+}

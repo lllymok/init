@@ -1,3 +1,18 @@
 {
-  "login": "Login hub project"
+  "login": "Login hub project",
+  "enrolled": "Are you already enrolled?",
+  "title": "Let's start your onboarding process",
+  "phone": {
+    "info": "We'll be sending you a one-time passcode to continue with the sign-up process. Make sure to input a cell phone number and email you have access to.",
+    "label": "What is your cell phone number?"
+  },
+  "email": {
+    "validation": {
+      "require": "The email is required.",
+      "message": "Please enter valid email."
+    },
+    "placeholder": "you@example.com",
+    "label":"What is your email address?",
+    "info": "We'll be sending you a one-time passcode to continue with the sign-up process. Make sure to input a cell phone number and email you have access to."
+  }
 }
